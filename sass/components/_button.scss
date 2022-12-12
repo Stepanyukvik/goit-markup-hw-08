@@ -1,0 +1,79 @@
+.button {
+    
+    border: none;
+    cursor: pointer;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.button-studio {
+    height: 50px;
+    border-radius: 6px;
+
+    @media screen and (min-width: 480px) {
+        width: 200px;   
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 216px;   
+    }
+}
+
+
+.button-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    @media screen and (max-width: 1199px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.button-footer__subscription {
+    margin-right: 10px;
+}
+
+
+.button-portfolio {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 22px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-fuction);
+
+    &:hover, &:focus {
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+}
+
+
+
+
+
+
+
+
+ 
