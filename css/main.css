@@ -15,6 +15,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  overflow-x: hidden;
 }
 
 .section {
@@ -505,7 +506,20 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 93px;
+  margin-left: 88px;
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav__list.list-auth {
+    display: block;
+    margin-left: 90px;
+    text-align: center;
+  }
 }
 
 .nav__list .list-site__item + .list-site__item {
@@ -584,9 +598,15 @@ img {
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .list-auth__item + .list-auth__item {
     margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 786px) and (max-width: 1199px) {
+  .list-auth__item:first-child {
+    margin-bottom: 10px;
   }
 }
 
@@ -612,6 +632,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .list-auth__link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-auth__link {
     font-size: 14px;
     line-height: 1.14;
   }
@@ -629,6 +655,7 @@ img {
   margin-right: 10px;
   fill: none;
   stroke: currentColor;
+  text-align: center;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
