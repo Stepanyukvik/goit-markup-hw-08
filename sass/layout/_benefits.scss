@@ -23,8 +23,14 @@
     background-color: var(--background-color);
     margin-bottom: 30px; 
 
+    @media screen and (max-width: 479px) {
+        padding: 25px  110px; 
+        width: 100%;  
+    }
+   
     @media screen and (min-width: 480px) {
-        padding: 25px 190px;   
+        padding: 25px 190px; 
+        
     }
 
     @media screen and (min-width: 768px) {
@@ -37,6 +43,10 @@
 }
 
 .benefits__list__item {
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 30px) / 2);  
     }

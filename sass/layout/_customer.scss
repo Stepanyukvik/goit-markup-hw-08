@@ -35,7 +35,7 @@
     transition-duration: 250ms;
     transition-timing-function: var(--timing-fuction);
     
-    @media screen and (min-width: 480px) {  
+    @media screen and (max-width: 767px) {  
         width: 210px;
         flex-basis: calc((100% - 30px) / 2);
         }

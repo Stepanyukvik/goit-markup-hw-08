@@ -5,6 +5,11 @@
 .page-header__nav {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px){
+        width: 100%;
+        justify-content: space-between;
+    }
     
 }
 
@@ -14,7 +19,7 @@
 }
 
 
-@media screen and (max-width:1199px) {
+@media screen and (min-width: 300px) and (max-width:1199px) {
     .nav-list {
        display: none;
        
@@ -39,9 +44,6 @@
 
 .nav__logo {
     display: block;
-    @media screen and (max-width: 767px) {
-        margin-right: 276px;
-    }
     
     @media screen and (min-width:480px) {
         padding-top: 16px;
@@ -102,6 +104,10 @@
     transition-timing-function: var(--timing-fuction);
 
     
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+
     @media screen and (min-width: 480px) {
         font-size: 40px;
         line-height: 1.18;
@@ -161,6 +167,12 @@
     margin-left: auto;
 }
 
+.list-auth__item {
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+}
+
 .list-auth__item+ .list-auth__item {
     @media screen and (min-width: 1200px) {
         margin-left: 50px;
@@ -188,6 +200,9 @@
     transition-duration: 250ms;
     transition-timing-function: var(--timing-fuction);
 
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
 
     @media screen and (min-width: 768px) {
         font-size: 12px;
@@ -206,6 +221,7 @@
         color: var(--accent-color);
         font-size: 34px;
         line-height: 1.18;
+        margin-bottom: 32px;
     }
 }
 
@@ -223,6 +239,10 @@
 .list-auth__link {
     &:hover, &:focus {
         color: var(--accent-color);
+    }
+
+    @media screen and (max-width: 479px) {
+        width: 100%;
     }
 
 }
@@ -261,11 +281,13 @@
   .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
   }
+
+  @media screen and (max-width: 767px) {
   .menu-container {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     padding: 48px 40px;
     background-color:#fff;
@@ -273,6 +295,8 @@
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
   }
+}
+
   .menu-container.is-open {
     transform: translateX(0);
   }
@@ -289,14 +313,12 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
-
-     
   }
 
 .mobile-menu.social-links {
-        display: flex;
-        margin-top: 64px;
-     }
+    display: flex;
+    margin-top: 64px;
+}
 
 .social-links__link {
     font-weight: 500;
@@ -317,3 +339,11 @@
     margin-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
+
+
+  .tel-number {
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+  }
+ 

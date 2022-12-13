@@ -34,6 +34,10 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--timing-fuction);
 
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+
     @media screen and (min-width: 1200px) {
         width: 528px;
         height: 581px;
@@ -80,6 +84,10 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
 
     @media screen and (min-width: 1200px) {
         width: 448px;
