@@ -217,11 +217,17 @@
 
 
 .list-auth__link.tel {
-    @media screen and (max-width: 767px) {
-        color: var(--accent-color);
+    color: var(--accent-color);
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 479px) {
+       font-size: 24px;
+       line-height: 1.18;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
         font-size: 34px;
         line-height: 1.18;
-        margin-bottom: 32px;
     }
 }
 
@@ -282,8 +288,9 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
 
-  @media screen and (max-width: 767px) {
+   
   .menu-container {
+    @media screen and (max-width: 767px){
     position: fixed;
     top: 0;
     left: 0;
@@ -295,6 +302,11 @@
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  
 }
 
   .menu-container.is-open {
@@ -317,6 +329,7 @@
 
 .mobile-menu.social-links {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
 }
 
